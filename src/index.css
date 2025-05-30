@@ -1,0 +1,47 @@
+:root {
+  --cor-bege-claro: #F5F5DC;  
+  --cor-bege-medio: #D2B48C; 
+  --cor-marrom-claro: #A0522D;
+  --cor-marrom-medio: #8B4513; 
+  --cor-marrom-escuro: #5A2D0C; 
+
+  --cor-texto-claro: var(--cor-bege-claro);
+  --cor-texto-escuro: var(--cor-marrom-escuro);
+
+  --fonte-principal: 'Arial', sans-serif;
+  --fonte-titulo: 'Georgia', serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-bege-claro);
+  color: var(--cor-texto-escuro);
+  line-height: 1.6;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+a {
+  color: var(--cor-marrom-medio);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

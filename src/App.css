@@ -1,0 +1,45 @@
+.main-content {
+  flex-grow: 1; /* Garante que o conteúdo principal ocupe o espaço restante */
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profissoes-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profissoes-section h2 {
+  color: var(--cor-marrom-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  color: var(--cor-marrom-medio);
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.profissoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grid responsivo */
+  gap: 1.5rem; /* Espaço entre os cards */
+  justify-content: center; /* Centraliza os cards no grid */
+}
+
+/* Responsividade para o grid de profissões */
+@media (max-width: 768px) {
+  .profissoes-grid {
+    grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .profissoes-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas maiores */
+  }
+}

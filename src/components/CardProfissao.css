@@ -1,0 +1,54 @@
+.card-profissao {
+    background-color: var(--cor-bege-claro);
+    border: 1px solid var(--cor-marrom-claro);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+    color: var(--cor-texto-escuro);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-profissao:hover {
+    transform: translateY(-5px); 
+  }
+  .card-title {
+    color: var(--cor-marrom-medio); 
+    font-family: var(--fonte-titulo);
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; 
+  }
+  
+  .card-habilidades h4 {
+    color: var(--cor-marrom-escuro);
+    margin-bottom: 0.8rem;
+    font-size: 1.1em;
+  }
+  
+  .card-habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .card-habilidades li {
+    background-color: var(--cor-marrom-claro); 
+    color: var(--cor-texto-claro); 
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85em;
+    white-space: nowrap;
+  }
